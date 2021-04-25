@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AboutAppFragment">
+
+    <!-- TODO: Update blank com.ashish.aggrobuddy.fragment layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/component_of_aggrobuddy"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aggrobuddy_is_the_fine_platform_for_the_farmner_worker_merchant_nhere_with_the_help_of_worker_farmer_sell_their_caltivated_product_to_the_merchant_at_optimal_coast_price"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/textView"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/some_of_the_function_are_listed_below"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/textView4"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_would_like_to_develop_a_platform_where_farmers_would_sell_their_cultivated_products_and_merchants_would_buy_the_products_of_their_interest_n_the_idea_is_to_create_such_an_app_which_can_provide_a_platform_to_the_farmer_for_selling_their_crops_without_involving_brokers_this_app_will_act_like_a_bridge_between_merchant_and_the_farmer_nt_will_help_them_in_getting_more_benefit_for_the_crops_which_was_initially_taken_by_the_broker_as_it_is_obvious_that_farmers_do_not_generally_use_or_install_these_kinds_of_app_without_any_past_reference_for_solving_this_issue_we_can_promote_our_app_by_establishing_a_help_centre_inside_nearby_villages"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/textView2"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_smart_greenhouse_n2_agriculture_drone_n3_water_crop_management_n4_monitering_of_climate_condiction_n5_live_stock_management"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/textView3"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smart_greenhouse_it_is_technique_to_boost_the_yield_crop_fruits_and_vegetable_different_sensors_that_measure_the_environmental_parameters_according_to_the_plant_requirement_are_used_for_controlling_the_environment_in_a_smart_greenhouse_then_it_create_a_very_good_environment_according_to_need_of_yield_a_cloud_server_creates_for_remotely_accessing_the_system_when_it_connects_using_iot_n_agriculture_drone_drones_provide_pictorial_and_aerial_maps_about_the_plants_thus_making_the_farmer_understand_that_which_crop_is_in_need_of_immediate_attention_drones_also_evaluate_the_health_state_irrigation_monitoring_of_progress_spraying_and_planting_of_each_crop_drones_are_helpful_in_saving_time_and_effort_farmers_have_to_choose_the_height_or_ground_resolution_of_the_field_for_which_the_drones_have_to_be_used_then_the_drones_take_the_pictures_of_the_crops_and_helps_the_farmer_to_give_immediate_report_for_the_required_crops_n_crop_and_water_management_water_is_the_essential_resource_for_performing_agriculture_all_the_agricultural_activities_are_based_on_the_adequate_supply_of_water_hence_it_is_necessary_for_the_farmer_to_ensure_adequate_supply_of_water_to_the_crops_this_technique_uses_the_web_map_service_wms_and_sensor_observation_service_sos_for_ensuring_proper_water_supply_for_the_irrigation_of_the_crops_thus_this_iot_device_reduces_water_wastage_n_monitoring_climate_condition_climate_and_weather_conditions_are_the_primary_factors_to_be_noted_during_agriculture_for_monitoring_the_climate_conditions_of_the_surroundings_the_task_of_the_sensor_is_to_collect_the_data_across_the_field_send_it_to_the_cloud_the_cloud_is_loaded_with_some_basic_measurements_which_will_then_be_compared_with_the_sensed_data_based_on_the_comparison_we_will_be_able_to_map_the_climatic_conditions_and_choose_the_required_crop_for_cultivation"
+            android:layout_below="@id/textView5"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem In traditional Method:-"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/textView6"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_farmers_don_t_receive_convenient_prices_of_the_cultivated_crops_n_2_the_merchant_is_not_able_to_know_the_exact_price_of_the_farmer_s_products_due_to_broker_n_3_broker_takes_benefits_from_the_both_sides_n_4_every_time_the_broker_wouldn_t_be_present_to_communicate_merchant_with_the_farmer_n_5_the_problem_of_merchant_regarding_unavailability_of_workers_for_associate_works_n_6_due_to_communication_gap_between_farmer_and_the_merchant_farmer_finds_difficulty_in_knowing_the_demand_of_products_in_market"
+            android:layout_below="@id/textView7"
+            android:textSize="18sp"
+            android:textStyle="normal"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/solution_by_using_latest_technology"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/textView8"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_farmer_will_get_authentic_price_for_their_cultivated_products_by_using_the_application_n_n_2_as_merchant_will_have_direct_communication_with_the_farmers_it_will_give_rise_to_transparency_in_the_rate_of_the_crops_n_n_3_by_using_this_application_the_system_of_the_brokery_will_get_reduced_to_some_extent_n_n_4_whenever_the_merchant_wishes_to_communicate_with_the_customer_farmer_a_direct_link_would_get_set_up_between_them_n_n_5_the_motive_of_the_app_is_to_create_a_positive_and_trusted_relationship_between_farmer_and_the_merchant_it_will_also_make_farmers_aware_of_the_market_demand_of_their_crops"
+            android:layout_below="@id/textView9"
+            android:textSize="18sp"
+            android:textStyle="normal"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

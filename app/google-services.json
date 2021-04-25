@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072708611076",
+    "firebase_url": "https://aggrobuddy-82780-default-rtdb.firebaseio.com",
+    "project_id": "aggrobuddy-82780",
+    "storage_bucket": "aggrobuddy-82780.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072708611076:android:960632977dcc6b0cc35951",
+        "android_client_info": {
+          "package_name": "com.ashish.aggrobuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072708611076-jc9rfjnao49n4qc2vs3h1if48jje72lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUiOyrXMh9l5f1mPoY5hZ-p2SkHA39YFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072708611076-jc9rfjnao49n4qc2vs3h1if48jje72lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

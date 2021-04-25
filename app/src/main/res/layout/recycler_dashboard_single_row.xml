@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagedashboard1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/onion"/>
+
+    <TextView
+        android:id="@+id/txtfarmerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/imagedashboard1"
+        android:text="Name of Farmer"
+
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/txtrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfarmerName"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/imagedashboard1"
+        android:text="@string/rate"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtrate"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/imagedashboard1"
+        android:text="Mobile Number:-"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgfavrouties"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@id/txtrate"
+        android:src="@drawable/ic_rating" />
+
+    <TextView
+        android:id="@+id/txtrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtphone"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/imagedashboard1"
+        android:text="Rating:-"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</RelativeLayout>

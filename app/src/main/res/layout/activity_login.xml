@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imglogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:text="WELCOME\nFarmer || Merchant || Worker\nLogin Here"
+        android:textAlignment="center"
+        android:textColor="#0d47a1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textWelcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/login_logo" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginlogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="42dp"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etqueryPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:layout_below="@id/etMobileNumber" />
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etqueryPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="22dp"
+        android:padding="6sp"
+        android:text="@string/forget_password"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonPanellogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="#00BCD4"
+        android:onClick="method"
+        android:padding="6dp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRegister"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonPanellogin"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="132dp"
+                android:padding="6sp"
+
+                android:text="Register Yourself"
+
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PrivacyPolicyFragment">
+
+    <!-- TODO: Update blank com.ashish.aggrobuddy.fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/this_privacy_policy_describes_our_policies_and_procedures_on_the_collection_use_and_disclosure_of_your_information_when_you_use_the_service_and_tells_you_about_your_privacy_rights_and_how_the_law_protects_you_n_nwe_use_your_personal_data_to_provide_and_improve_the_service_by_using_the_service_you_agree_to_the_collection_and_use_of_information_in_accordance_with_this_privacy_policy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/interpretation"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/the_words_of_which_the_initial_letter_is_capitalized_have_meanings_defined_under_the_following_conditions_the_following_definitions_shall_have_the_same_meaning_regardless_of_whether_they_appear_in_singular_or_in_plural"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/difinition"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/for_the_purposes_of_this_privacy_policy_account_means_a_unique_account_created_for_you_to_access_our_service_or_parts_of_our_service_n_n_affiliate_means_an_entity_that_controls_is_controlled_by_or_is_under_common_control_with_a_party_where_means_ownership_of_50_or_more_of_the_shares_equity_interest_or_other_securities_entitled_to_vote_for_election_of_directors_or_other_managing_authority_n_n_application_means_the_software_program_provided_by_the_company_downloaded_by_you_on_any_electronic_device_named_aggrobuddy_n_n_company_refers_to_aggrobuddy_country_refers_to_bihar_india_n_n_device_means_any_device_that_can_access_the_service_such_as_a_computer_a_cellphone_or_a_digital_tablet_personal_data_is_any_information_that_relates_to_an_identified_or_identifiable_individual_n_n_service_refers_to_the_application_n_n_service_provider_means_any_natural_or_legal_person_who_processes_the_data_on_behalf_of_the_company_it_refers_to_third_party_companies_or_individuals_employed_by_the_company_to_facilitate_the_service_to_provide_the_service_on_behalf_of_the_company_to_perform_services_related_to_the_service_or_to_assist_the_company_in_analyzing_how_the_service_is_used_third_party_n_n_social_media_service_refers_to_any_website_or_any_social_network_website_through_which_a_user_can_log_in_or_create_an_account_to_use_the_service_n_n_usage_data_refers_to_data_collected_automatically_either_generated_by_the_use_of_the_service_or_from_the_service_infrastructure_itself_n_n_you_means_the_individual_accessing_or_using_the_service_or_the_company_or_other_legal_entity_on_behalf_of_which_such_individual_is_accessing_or_using_the_service_as_applicable"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/textview5"/>
+
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/by_email_aviashishranjan_gmail_com_by_phone_number_9865324170_by_mail_bairiya_ranjan_apartment_opposite_of_adarsh_nurshing_home_bairiya_patna_800007_privacy_policy_for_aggrobuddy"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/textview6"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

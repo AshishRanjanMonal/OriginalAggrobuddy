@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/dashboard"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_account"/>
+
+    <item
+        android:id="@+id/favourites"
+        android:title="@string/favourites"
+        android:icon="@drawable/ic_favourites"/>
+
+    <item
+        android:id="@+id/Cart"
+        android:title="@string/cart"
+        android:icon="@drawable/ic_cart"/>
+
+
+
+    <item
+        android:id="@+id/TransactionHistory"
+        android:title="@string/transaction_history"
+        android:icon="@drawable/ic_transaction"/>
+
+    <item
+        android:id="@+id/FrequentAskQuestion"
+        android:title="@string/faq"
+        android:icon="@drawable/ic_faq"/>
+
+
+    <item
+        android:id="@+id/developer"
+        android:title="@string/developer"
+        android:icon="@drawable/ic_developers"/>
+
+
+
+    <item
+        android:id="@+id/AboutApp"
+        android:title="@string/about_app"
+        android:icon="@drawable/ic_aboutapp"/>
+
+    <item
+        android:id="@+id/LogOut"
+        android:title="@string/log_out"
+        android:icon="@drawable/ic_logout"/>
+
+    <item
+        android:id="@+id/HelpCenter"
+        android:title="@string/help_center"
+        android:icon="@drawable/ic_lhelpcenter"
+        />
+
+    <item
+        android:id="@+id/PrivacyPolicy"
+        android:title="@string/privacy_policy"
+        android:icon="@drawable/ic_privacy"/>
+    
+    <item
+        android:id="@+id/Send_Feedback"
+        android:title="@string/send_feedback"
+        android:icon="@drawable/ic_sendfeedback"/>
+
+</group>
+</menu>

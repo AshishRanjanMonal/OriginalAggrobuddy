@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.DescriptionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#FF5722"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/Content11"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:id="@+id/imageofframerproduct"
+                    android:src="@drawable/onion"
+                    android:scaleType="center"
+                    android:padding="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.3">
+
+                    <TextView
+                        android:id="@+id/textFaremername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name Of the Farmer"
+                        android:padding="8dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textRateOfTheProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rate:-Rs.500"
+                        android:layout_below="@id/textFaremername"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/textPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PhoneNumber"
+                        android:layout_below="@id/textRateOfTheProduct"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:drawablePadding="4dp"
+                    android:padding="4dp"
+                    android:text="4.5"
+                    android:textColor="#ffc828"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Content11">
+
+                <TextView
+                    android:id="@+id/textAboutFaremerProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:padding="6dp"
+                    android:text="About The Farmer Product"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textDecriptionproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textAboutFaremerProduct"
+                    android:layout_margin="10dp"
+                    android:padding="6dp"
+                    android:text="@string/Ans.03"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+<Button
+    android:id="@+id/btnAddToFavourites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#FF5722"
+    android:text="Add to Favourites"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:textSize="19sp"/>
+
+    <RelativeLayout
+        android:id="@+id/ProgressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DevelopersFragment">
+
+    <!-- TODO: Update blank com.ashish.aggrobuddy.fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageAshishAsADeveloper"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ashish" />
+
+            <TextView
+                android:id="@+id/textNameOfAshishRanjan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/imageAshishAsADeveloper"
+                android:text="@string/ashish_ranjan"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textEmailIdOfAshishRanjan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNameOfAshishRanjan"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageAshishAsADeveloper"
+                android:text="@string/aviashishranjan_gmail_com"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textPhoneNoOfAshishRanjan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textEmailIdOfAshishRanjan"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageAshishAsADeveloper"
+                android:text="@string/_91_6206416452"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageShaluAsADeveloper"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/shalu" />
+
+            <TextView
+                android:id="@+id/textNameOfshalu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/imageShaluAsADeveloper"
+                android:text="@string/shalu_kumari"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textEmailIdOfshalu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNameOfshalu"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imageShaluAsADeveloper"
+                android:text="@string/ambastashalu2u919_gmail_com"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textPhoneNoOfshalu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textEmailIdOfshalu"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imageShaluAsADeveloper"
+                android:text=" +91 6287099155"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#09EA12"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="Mentor"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageaknanAsADeveloper"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/aknan" />
+
+            <TextView
+                android:id="@+id/textNameOfaknan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/imageaknanAsADeveloper"
+                android:text="@string/mohamad_aknan"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textEmailIdOfaknan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNameOfaknan"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imageaknanAsADeveloper"
+                android:text="@string/aknan_cse_gmail_com"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textPhoneNoOfaknan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textEmailIdOfaknan"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/imageaknanAsADeveloper"
+                android:text=" +91 8879068355"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
