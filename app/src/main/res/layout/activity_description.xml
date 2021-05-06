@@ -8,39 +8,39 @@
     tools:context=".activity.DescriptionActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:minHeight="?attr/actionBarSize"
         android:background="#FF5722"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/Content11"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:id="@+id/Content11"
                 android:orientation="horizontal"
                 android:weightSum="6">
 
                 <ImageView
+                    android:id="@+id/imageofframerproduct"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1.5"
-                    android:id="@+id/imageofframerproduct"
-                    android:src="@drawable/onion"
+                    android:padding="5dp"
                     android:scaleType="center"
-                    android:padding="5dp" />
+                    android:src="@drawable/onion" />
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -51,33 +51,33 @@
                         android:id="@+id/textFaremername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Name Of the Farmer"
                         android:padding="8dp"
+                        android:text="Name Of the Farmer"
+                        android:textColor="#000000"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#000000"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textRateOfTheProduct"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Rate:-Rs.500"
                         android:layout_below="@id/textFaremername"
                         android:padding="8dp"
+                        android:text="Rate:-Rs.500"
+                        android:textColor="#000000"
                         android:textSize="15sp"
-                        android:textStyle="normal"
-                        android:textColor="#000000"/>
+                        android:textStyle="normal" />
 
                     <TextView
                         android:id="@+id/textPhoneNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PhoneNumber"
                         android:layout_below="@id/textRateOfTheProduct"
                         android:padding="8dp"
+                        android:text="PhoneNumber"
+                        android:textColor="#000000"
                         android:textSize="15sp"
-                        android:textStyle="normal"
-                        android:textColor="#000000"/>
+                        android:textStyle="normal" />
                 </RelativeLayout>
 
                 <TextView
@@ -91,7 +91,7 @@
                     android:text="4.5"
                     android:textColor="#ffc828"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <RelativeLayout
@@ -108,7 +108,7 @@
                     android:padding="6dp"
                     android:text="About The Farmer Product"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textDecriptionproduct"
@@ -120,7 +120,7 @@
                     android:text="@string/Ans.03"
                     android:textColor="#000000"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -130,16 +130,16 @@
     </ScrollView>
 
 
-<Button
-    android:id="@+id/btnAddToFavourites"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:background="#FF5722"
-    android:text="Add to Favourites"
-    android:textColor="#ffffff"
-    android:textStyle="bold"
-    android:textSize="19sp"/>
+    <Button
+        android:id="@+id/btnAddToFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:text="Add to Favourites"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:id="@+id/ProgressBarLayout"
@@ -151,7 +151,7 @@
             android:id="@+id/progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true" />
 
 
     </RelativeLayout>

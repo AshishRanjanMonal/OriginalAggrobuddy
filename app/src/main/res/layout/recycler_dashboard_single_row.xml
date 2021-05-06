@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -10,7 +9,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="20dp"
-        android:src="@drawable/onion"/>
+        android:src="@drawable/onion" />
 
     <TextView
         android:id="@+id/txtfarmerName"
@@ -22,7 +21,7 @@
 
         android:textColor="#000000"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 
     <TextView
@@ -35,7 +34,7 @@
         android:text="@string/rate"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/txtphone"

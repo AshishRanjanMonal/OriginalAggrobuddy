@@ -18,23 +18,23 @@
         android:id="@+id/edittext1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_your_email_id"
         android:layout_below="@id/img1"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:padding="15dp"/>
+        android:hint="@string/enter_your_email_id"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/edittext2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/report_an_app_bug_suggest_an_idea"
         android:layout_below="@id/edittext1"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:padding="15dp"/>
+        android:hint="@string/report_an_app_bug_suggest_an_idea"
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/btn1"
@@ -45,7 +45,7 @@
         android:layout_marginTop="15dp"
         android:background="@color/purple_200"
         android:padding="10dp"
-        android:textStyle="bold"
         android:text="@string/submit_the_feedback"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>

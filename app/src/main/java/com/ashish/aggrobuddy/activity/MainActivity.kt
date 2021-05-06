@@ -20,36 +20,37 @@ import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    var titleName: String? ="person"
-    lateinit var sharedPreferences:SharedPreferences
+    var titleName: String? = "person"
+    private lateinit var sharedPreferences: SharedPreferences
 
-    lateinit var drawerLayout: DrawerLayout
-    lateinit var coordinatorLayout: CoordinatorLayout
-    lateinit var toolbar: Toolbar
-    lateinit var frameLayout: FrameLayout
-    lateinit var navigationView: NavigationView
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var coordinatorLayout: CoordinatorLayout
+    private lateinit var toolbar: Toolbar
+    private lateinit var frameLayout: FrameLayout
+    private lateinit var navigationView: NavigationView
 
 
-    var previousMenuItem:MenuItem?=null
+    var previousMenuItem: MenuItem? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        sharedPreferences=getSharedPreferences("Aggrobuddy preference",Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("Aggrobuddy preference", Context.MODE_PRIVATE)
 
         setContentView(R.layout.activity_main)
-            titleName=sharedPreferences.getString("nameOfPersonLogin","nameOfPersonLogin")
-        title=titleName
+        titleName = sharedPreferences.getString("nameOfPersonLogin", "nameOfPersonLogin")
+        title = titleName
 
         drawerLayout = findViewById(R.id.drawerLayout)
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
-       toolbar = findViewById(R.id.toolbar)
+        toolbar = findViewById(R.id.toolbar)
         frameLayout = findViewById(R.id.frame)
         navigationView = findViewById(R.id.navigationView)
         setUpToolbar()
         openDashboard()
 
-        val actionBarDrawerToggle = ActionBarDrawerToggle(this@MainActivity,
-                drawerLayout,
+        val actionBarDrawerToggle = ActionBarDrawerToggle(
+            this@MainActivity,
+            drawerLayout,
             R.string.open_drawer,
             R.string.close_drawer
         )
@@ -58,18 +59,16 @@ class MainActivity : AppCompatActivity() {
 
         navigationView.setNavigationItemSelectedListener {
 
-            if (previousMenuItem != null)
-            {
-                previousMenuItem?.isChecked=false
+            if (previousMenuItem != null) {
+                previousMenuItem?.isChecked = false
             }
-            it.isCheckable=true
-            it.isChecked=true
-            previousMenuItem=it
+            it.isCheckable = true
+            it.isChecked = true
+            previousMenuItem = it
 
-            when(it.itemId)
-            {
+            when (it.itemId) {
                 R.id.dashboard -> {
-                   openDashboard()
+                    openDashboard()
                     drawerLayout.closeDrawers()
 
                 }
@@ -78,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, MyAccountFragment())
 
                         .commit()
-                    supportActionBar?.title="Profile"
+                    supportActionBar?.title = "Profile"
                     drawerLayout.closeDrawers()
 
                 }
@@ -87,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, FavouritesFragment())
 
                         .commit()
-                    supportActionBar?.title="Favourites"
+                    supportActionBar?.title = "Favourites"
                     drawerLayout.closeDrawers()
 
 
@@ -97,7 +96,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, MyCartFragment())
 
                         .commit()
-                    supportActionBar?.title="My Cart"
+                    supportActionBar?.title = "My Cart"
                     drawerLayout.closeDrawers()
 
 
@@ -107,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, TransactionHistoryFragment())
 
                         .commit()
-                    supportActionBar?.title="Transaction History"
+                    supportActionBar?.title = "Transaction History"
                     drawerLayout.closeDrawers()
 
 
@@ -115,10 +114,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.FrequentAskQuestion -> {
 
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,FrequentlyAskedQuestion())
+                        .replace(R.id.frame, FrequentlyAskedQuestion())
                         .commit()
 
-                    supportActionBar?.title="FAQs"
+                    supportActionBar?.title = "FAQs"
                     drawerLayout.closeDrawers()
 
 
@@ -128,7 +127,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, DevelopersFragment())
 
                         .commit()
-                    supportActionBar?.title="Developers"
+                    supportActionBar?.title = "Developers"
                     drawerLayout.closeDrawers()
 
 
@@ -138,7 +137,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, SendFeedBackFragment())
 
                         .commit()
-                    supportActionBar?.title="Send Feedback"
+                    supportActionBar?.title = "Send Feedback"
                     drawerLayout.closeDrawers()
 
 
@@ -148,7 +147,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, PrivacyPolicyFragment())
 
                         .commit()
-                    supportActionBar?.title="Privacy Policy"
+                    supportActionBar?.title = "Privacy Policy"
                     drawerLayout.closeDrawers()
 
                 }
@@ -157,7 +156,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, AboutAppFragment())
 
                         .commit()
-                    supportActionBar?.title="About App"
+                    supportActionBar?.title = "About App"
                     drawerLayout.closeDrawers()
 
                 }
@@ -168,9 +167,8 @@ class MainActivity : AppCompatActivity() {
                     dialog.setTitle("Confirmation")
                     dialog.setMessage("Are you ready to Logout ?!!!!!")
                     dialog.setPositiveButton("Yes, Log out")
-                    {
-                        _, _->
-                        val editor:SharedPreferences.Editor=sharedPreferences.edit()
+                    { _, _ ->
+                        val editor: SharedPreferences.Editor = sharedPreferences.edit()
                         editor.clear()
                         editor.apply()
                         /*DeleteFavourites(this@MainActivity).execute()
@@ -179,7 +177,7 @@ class MainActivity : AppCompatActivity() {
                         finish()
 
                     }
-                    dialog.setNegativeButton("Never Mind ",null)
+                    dialog.setNegativeButton("Never Mind ", null)
                     dialog.create().show()
 
                 }
@@ -189,7 +187,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, HelpFragment())
 
                         .commit()
-                    supportActionBar?.title="Help Center"
+                    supportActionBar?.title = "Help Center"
                     drawerLayout.closeDrawers()
 
                 }
@@ -199,19 +197,17 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    class DeleteFavourites(val context : Context) {
+    class DeleteFavourites(val context: Context) {
 
     }
 
-    fun setUpToolbar() {
+    private fun setUpToolbar() {
 
         setSupportActionBar(toolbar)
-        supportActionBar?.title="Toolbar Title"
+        supportActionBar?.title = "Toolbar Title"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
-
-
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -222,26 +218,23 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-    fun openDashboard()
-    {
+
+    private fun openDashboard() {
         val fragment = DashboardFragment()
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frame,fragment)
+        transaction.replace(R.id.frame, fragment)
         transaction.commit()
-        supportActionBar?.title="Dashboard"
+        supportActionBar?.title = "Dashboard"
         navigationView.setCheckedItem(R.id.dashboard)
     }
 
     override fun onBackPressed() {
-        val frag= supportFragmentManager.findFragmentById(R.id.frame)
-        when (frag)
-        {
-          !is DashboardFragment ->openDashboard()
-          else->super.onBackPressed()
+        when (supportFragmentManager.findFragmentById(R.id.frame)) {
+            !is DashboardFragment -> openDashboard()
+            else -> super.onBackPressed()
         }
 
     }
-
 
 
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.WindowManager
 import com.ashish.aggrobuddy.R
 
 class SplaceScreenActivity : AppCompatActivity() {
@@ -14,11 +15,16 @@ class SplaceScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splace_screen)
 
-        handler= Handler()
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
+
+        handler = Handler()
         handler.postDelayed({
-            val intent= Intent(this@SplaceScreenActivity,LoginActivity::class.java)
+            val intent = Intent(this@SplaceScreenActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        },3000)
+        }, 3000)
     }
 }

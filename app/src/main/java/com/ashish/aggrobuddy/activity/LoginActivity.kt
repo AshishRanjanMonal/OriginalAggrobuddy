@@ -87,16 +87,15 @@ class LoginActivity : AppCompatActivity() {
 
                     startActivity(intent)
                 } else if ((mobileNumber == validMobileNumber[1]) && (password == validPassword[1])) {
-                    nameOfPersonLogin=" Welcome Sahlu Ambasta"
+                    nameOfPersonLogin = " Welcome Shalu Ambasta"
                     savepreferences(nameOfPersonLogin)
 
                     startActivity(intent)
                 } else {
                     Toast.makeText(
-                        this@LoginActivity, "Inavid Credential",
+                        this@LoginActivity, "Invalid Credential",
                         Toast.LENGTH_LONG
-                    )
-                        .show()
+                    ).show()
                 }
 
 

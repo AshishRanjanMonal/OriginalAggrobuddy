@@ -7,21 +7,21 @@
 
     <!-- TODO: Update blank com.ashish.aggrobuddy.fragment layout -->
 
-<ImageView
-    android:id="@+id/imgehelp"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
-    android:src="@drawable/coomingsoonlogo"/>
+    <ImageView
+        android:id="@+id/imgehelp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/coomingsoonlogo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thank you Saty connected with us  "
-        android:textSize="18sp"
-        android:layout_marginTop="15dp"
         android:layout_below="@id/imgehelp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Thank you stay connected with us  "
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>

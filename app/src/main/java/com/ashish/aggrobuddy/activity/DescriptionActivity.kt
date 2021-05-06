@@ -43,7 +43,7 @@ class DescriptionActivity : AppCompatActivity() {
             finish()
             Toast.makeText(
                 this@DescriptionActivity,
-                "Some Unexpected Error Occured",
+                "Some Unexpected Error Occurred",
                 Toast.LENGTH_LONG
             ).show()
         }
@@ -51,7 +51,7 @@ class DescriptionActivity : AppCompatActivity() {
             finish()
             Toast.makeText(
                 this@DescriptionActivity,
-                "Some unecpected error Occured !!",
+                "Some unexpected error Occurred !!",
                 Toast.LENGTH_LONG
             )
                 .show()
