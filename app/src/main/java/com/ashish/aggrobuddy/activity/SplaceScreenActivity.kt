@@ -9,7 +9,7 @@ import com.ashish.aggrobuddy.R
 
 class SplaceScreenActivity : AppCompatActivity() {
 
-    lateinit var handler:Handler
+    lateinit var handler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +25,6 @@ class SplaceScreenActivity : AppCompatActivity() {
             val intent = Intent(this@SplaceScreenActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 2000)
     }
 }
